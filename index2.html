@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Respira Livre Premium</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #0f172a, #020617);
+  color: white;
+  text-align: center;
+}
+
+.app-container {
+  max-width: 420px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #22c55e;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  opacity: 0.7;
+  margin-bottom: 25px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.price {
+  font-size: 26px;
+  font-weight: bold;
+  color: #22c55e;
+  margin: 15px 0;
+}
+
+.features {
+  text-align: left;
+  margin-top: 15px;
+}
+
+.features p {
+  margin-bottom: 8px;
+}
+
+.buy-btn {
+  background: #22c55e;
+  border: none;
+  padding: 15px;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buy-btn:hover {
+  background: #16a34a;
+}
+
+.counter {
+  margin-top: 15px;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.premium-badge {
+  background: gold;
+  color: black;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.footer {
+  margin-top: 40px;
+  font-size: 12px;
+  opacity: 0.5;
+}
+</style>
+</head>
+
+<body>
+
+<div class="app-container">
+
+  <div class="logo">🌿 Respira Livre</div>
+  <div class="subtitle">Transforme sua vida longe do cigarro</div>
+
+  <div class="card">
+
+    <div class="premium-badge">VERSÃO PREMIUM</div>
+
+    <h2>Acesso Vitalício</h2>
+
+    <div class="price">R$ 10,00</div>
+
+    <div class="features">
+      <p>✔️ Contador automático de progresso</p>
+      <p>✔️ Controle de dinheiro economizado</p>
+      <p>✔️ Sistema de motivação diário</p>
+      <p>✔️ Acesso exclusivo Premium</p>
+    </div>
+
+    <button class="buy-btn" onclick="comprar()">
+      Comprar Agora
+    </button>
+
+    <div class="counter">
+      🔥 <span id="contador"></span> pessoas já começaram
+    </div>
+
+  </div>
+
+  <div class="footer">
+    © 2026 Respira Livre - Todos os direitos reservados
+  </div>
+
+</div>
+
+<script>
+
+// contador falso de vendas (efeito psicológico)
+let numeroInicial = 137;
+let variacao = Math.floor(Math.random() * 15);
+document.getElementById("contador").innerText = numeroInicial + variacao;
+
+function comprar() {
+  alert("Pagamento será liberado após validação do Mercado Pago.");
+  // depois você troca aqui pelo seu link:
+  // window.location.href = "COLE_SEU_LINK_AQUI";
+}
+
+</script>
+
+</body>
+</html>
