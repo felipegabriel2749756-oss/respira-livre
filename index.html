@@ -123,9 +123,12 @@ body {
       <p>✔️ Acesso exclusivo Premium</p>
     </div>
 
-    <button class="buy-btn" onclick="comprar()">
-      Comprar Agora
-    </button>
+    <!-- BOTÃO COM LINK DO NUBANK -->
+    <a href="https://nubank.com.br/cobrar/9v6f8/6993ce46-24f5-403d-b7ca-b05751722765" target="_blank">
+      <button class="buy-btn">
+        Comprar Agora
+      </button>
+    </a>
 
     <div class="counter">
       🔥 <span id="contador"></span> pessoas já começaram
@@ -141,16 +144,10 @@ body {
 
 <script>
 
-// contador falso de vendas (efeito psicológico)
+// contador visual
 let numeroInicial = 137;
 let variacao = Math.floor(Math.random() * 15);
 document.getElementById("contador").innerText = numeroInicial + variacao;
-
-function comprar() {
-  alert("Pagamento será liberado após validação do Mercado Pago.");
-  // depois você troca aqui pelo seu link:
-  // window.location.href = "COLE_SEU_LINK_AQUI";
-}
 
 </script>
 
